@@ -34,6 +34,8 @@ export const projects: ProjectEntry[] = [
     year: "2024",
     tags: ["Decathlon", "Performance", "Self-tracking", "Analytics"],
     featured: false,
+    image: "/images/track-portrait.jpg",
+    imagePosition: "object-center",
     imagePlaceholder: "bg-jeani-cream-dark",
   },
   {
