@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --yes)",
+      "Read(//opt/homebrew/bin/**)",
+      "Read(//usr/local/**)",
+      "Read(//Users/ewanbradley/Library/**)",
+      "Read(//Users/ewanbradley/.volta/**)",
+      "Read(//Users/ewanbradley/**)",
+      "Bash(echo $PATH)",
+      "Read(//usr/bin/**)",
+      "Bash(source ~/.nvm/nvm.sh)",
+      "Bash(brew list:*)",
+      "Bash(/opt/homebrew/bin/brew --version)",
+      "Bash(/usr/local/bin/brew --version)",
+      "Bash(curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh)",
+      "Bash(bash)",
+      "Bash(export NVM_DIR=\"$HOME/.nvm\")",
+      "Bash(source \"$NVM_DIR/nvm.sh\")",
+      "Bash(nvm install:*)",
+      "Bash(npm install:*)"
+    ]
+  }
+}
