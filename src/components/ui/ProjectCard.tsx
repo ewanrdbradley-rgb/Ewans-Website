@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { ExternalLink } from "lucide-react";
+import Image from "next/image";
 import RoleTag from "./RoleTag";
 import { cn } from "@/lib/utils";
 import type { ProjectEntry } from "@/types";
@@ -35,19 +36,30 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         project.featured && "md:col-span-2"
       )}
     >
-      {/* Image area (featured only) */}
-      {project.featured && (
+      {/* Image area */}
+      {(project.featured || project.image) && (
         <div
           className={cn(
-            "h-40 sm:h-52 w-full",
-            project.imagePlaceholder ?? "bg-jeani-cream-dark"
+            "relative w-full overflow-hidden",
+            project.featured ? "h-40 sm:h-52" : "h-36",
+            !project.image && (project.imagePlaceholder ?? "bg-jeani-cream-dark")
           )}
         >
-          <div className="w-full h-full flex items-center justify-center">
-            <span className="text-jeani-muted text-sm font-medium tracking-wide uppercase">
-              {project.title}
-            </span>
-          </div>
+          {project.image ? (
+            <Image
+              src={project.image}
+              alt={project.title}
+              fill
+              className={`object-cover ${project.imagePosition ?? "object-center"}`}
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center">
+              <span className="text-jeani-muted text-sm font-medium tracking-wide uppercase">
+                {project.title}
+              </span>
+            </div>
+          )}
         </div>
       )}
 

@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { ExternalLink, MapPin } from "lucide-react";
+import Image from "next/image";
 import RoleTag from "./RoleTag";
 import type { ExperienceEntry } from "@/types";
 
@@ -33,8 +34,23 @@ export default function ExperienceCard({ entry, index }: ExperienceCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.12, ease: "easeOut" }}
       viewport={{ once: true, margin: "-60px" }}
-      className="bg-jeani-cream-dark border border-jeani-border rounded-card p-7 sm:p-8"
+      className="bg-jeani-cream-dark border border-jeani-border rounded-card overflow-hidden"
     >
+      {/* Photo banner */}
+      {entry.image && (
+        <div className="relative w-full h-48 sm:h-56">
+          <Image
+            src={entry.image}
+            alt={`${entry.role} at ${entry.organization}`}
+            fill
+            className={`object-cover ${entry.imagePosition ?? "object-center"}`}
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-jeani-cream-dark/60 to-transparent" />
+        </div>
+      )}
+
+      <div className="p-7 sm:p-8">
       {/* Top row */}
       <div className="flex items-start gap-4 mb-5">
         <IconBlock icon={entry.icon} />
@@ -89,6 +105,7 @@ export default function ExperienceCard({ entry, index }: ExperienceCardProps) {
         {entry.tags.map((tag) => (
           <RoleTag key={tag} label={tag} />
         ))}
+      </div>
       </div>
     </motion.article>
   );

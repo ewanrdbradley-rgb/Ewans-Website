@@ -36,6 +36,8 @@ export const experiences: ExperienceEntry[] = [
     ],
     tags: ["Athletics", "Decathlon", "Duke", "ACC"],
     icon: "duke",
+    image: "/images/hurdles.jpg",
+    imagePosition: "object-center",
   },
   {
     id: "duke-research",
@@ -53,5 +55,7 @@ export const experiences: ExperienceEntry[] = [
     ],
     tags: ["Research", "Sports Medicine", "Biomechanics", "Duke"],
     icon: "research",
+    image: "/images/duke-team.jpg",
+    imagePosition: "object-center",
   },
 ];

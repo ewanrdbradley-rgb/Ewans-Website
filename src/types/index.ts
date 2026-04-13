@@ -9,6 +9,8 @@ export interface ExperienceEntry {
   highlights: string[];
   tags: string[];
   icon: "jeani" | "duke" | "research";
+  image?: string;
+  imagePosition?: string;
 }
 
 export interface ProjectEntry {
@@ -21,6 +23,8 @@ export interface ProjectEntry {
   link?: string;
   linkLabel?: string;
   featured: boolean;
+  image?: string;
+  imagePosition?: string;
   imagePlaceholder?: string;
 }
 
