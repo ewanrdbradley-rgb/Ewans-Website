@@ -6,9 +6,9 @@ import { Twitter, Instagram, Linkedin, Mail } from "lucide-react";
 import Image from "next/image";
 
 const roles = [
-  "CEO, Jeani Health",
-  "Duke Decathlete",
-  "Lead Researcher, Global Sports Medicine",
+  "Co-Founder & CEO, Jeani",
+  "International Decathlete",
+  "MS Global Health — Duke University",
 ];
 
 const socials = [
@@ -86,10 +86,11 @@ export default function Hero() {
 
           {/* Bio */}
           <p className="text-jeani-mid leading-relaxed max-w-md mb-10">
-            Building technology that keeps athletes in the game. I bridge the
-            worlds of elite sport, clinical research, and software — from
-            competing in the decathlon at Duke to founding Jeani Health and
-            leading sports medicine research.
+            Co-Founder & CEO of Jeani, a wearable technology company focused on
+            movement, musculoskeletal health, and longevity. International
+            Decathlete competing for Duke University. MS in Global Health from
+            Duke. Passionate about leveraging sport and movement to address
+            health disparities globally.
           </p>
 
           {/* CTAs */}
@@ -137,7 +138,7 @@ export default function Hero() {
               src="/images/headshot-v2.jpg"
               alt="Ewan Bradley"
               fill
-              className="object-cover object-top"
+              className="object-cover object-[center_15%]"
               sizes="400px"
               priority
             />

@@ -13,9 +13,10 @@ interface ExperienceCardProps {
 
 function IconBlock({ icon }: { icon: ExperienceEntry["icon"] }) {
   const configs = {
-    jeani: { label: "J", bg: "bg-jeani-accent", text: "text-jeani-cream" },
-    duke:  { label: "D", bg: "bg-[#003087]", text: "text-white" },
-    research: { label: "R", bg: "bg-jeani-mid", text: "text-white" },
+    jeani:    { label: "J", bg: "bg-jeani-accent",  text: "text-jeani-cream" },
+    duke:     { label: "D", bg: "bg-[#003087]",     text: "text-white" },
+    research: { label: "R", bg: "bg-jeani-mid",     text: "text-white" },
+    lboro:    { label: "L", bg: "bg-[#660099]",     text: "text-white" },
   };
   const c = configs[icon];
   return (
@@ -38,12 +39,13 @@ export default function ExperienceCard({ entry, index }: ExperienceCardProps) {
     >
       {/* Photo banner */}
       {entry.image && (
-        <div className="relative w-full h-48 sm:h-56">
+        <div className="relative w-full h-56 sm:h-72">
           <Image
             src={entry.image}
             alt={`${entry.role} at ${entry.organization}`}
             fill
-            className={`object-cover ${entry.imagePosition ?? "object-center"}`}
+            className="object-cover"
+            style={{ objectPosition: entry.imagePosition ?? "center" }}
             sizes="(max-width: 768px) 100vw, 800px"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-jeani-cream-dark/60 to-transparent" />

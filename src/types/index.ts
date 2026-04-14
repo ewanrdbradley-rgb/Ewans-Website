@@ -8,7 +8,7 @@ export interface ExperienceEntry {
   description: string;
   highlights: string[];
   tags: string[];
-  icon: "jeani" | "duke" | "research";
+  icon: "jeani" | "duke" | "research" | "lboro";
   image?: string;
   imagePosition?: string;
 }
