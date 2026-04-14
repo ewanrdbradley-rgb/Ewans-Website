@@ -50,12 +50,13 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
               src={project.image}
               alt={project.title}
               fill
-              className={`object-cover ${project.imagePosition ?? "object-center"}`}
+              className="object-cover"
+              style={{ objectPosition: project.imagePosition ?? "center" }}
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           ) : (
             <div className="w-full h-full flex items-center justify-center">
-              <span className="text-jeani-muted text-sm font-medium tracking-wide uppercase">
+              <span className={`text-sm font-bold tracking-widest uppercase ${project.imagePlaceholder === "bg-jeani-accent" ? "text-jeani-cream/60" : "text-jeani-muted"}`}>
                 {project.title}
               </span>
             </div>
