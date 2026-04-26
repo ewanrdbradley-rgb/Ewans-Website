@@ -23,6 +23,8 @@ export const projects: ProjectEntry[] = [
       "A PRISMA-guided scoping review examining return-to-play decision-making and athlete outcomes in sports & exercise medicine across low- and middle-income countries.",
     year: "2026",
     tags: ["Sports Medicine", "Global Health", "LMICs", "Scoping Review", "PRISMA"],
+    link: "/RTP_LMICs_FINAL_04_23_26.pdf",
+    linkLabel: "Read Paper",
     featured: false,
     image: "/images/rtp-map.png",
     imagePosition: "center",
