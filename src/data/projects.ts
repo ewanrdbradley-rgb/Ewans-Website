@@ -28,6 +28,6 @@ export const projects: ProjectEntry[] = [
     featured: false,
     image: "/images/rtp-map.png",
     imagePosition: "center",
-    imagePlaceholder: "bg-jeani-cream-dark",
+    imagePlaceholder: "bg-card-2",
   },
 ];
