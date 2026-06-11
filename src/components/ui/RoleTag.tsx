@@ -9,11 +9,10 @@ export default function RoleTag({ label, variant = "default" }: RoleTagProps) {
   return (
     <span
       className={cn(
-        "inline-block rounded-pill px-3 py-1 text-xs font-medium tracking-wide",
-        variant === "default" && "bg-jeani-border text-jeani-mid",
-        variant === "accent" && "bg-jeani-accent/10 text-jeani-accent",
-        variant === "muted" &&
-          "bg-transparent border border-jeani-border text-jeani-muted"
+        "inline-block rounded-pill px-3 py-1 text-[11px] font-bold uppercase tracking-[0.1em]",
+        variant === "default" && "border border-ink/25 text-mid",
+        variant === "accent" && "bg-blue text-paper",
+        variant === "muted" && "border border-ink/15 text-faint"
       )}
     >
       {label}

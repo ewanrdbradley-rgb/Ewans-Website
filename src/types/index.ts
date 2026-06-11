@@ -28,6 +28,16 @@ export interface ProjectEntry {
   imagePlaceholder?: string;
 }
 
+export interface PressEntry {
+  id: string;
+  publication: string;
+  date: string;
+  headline: string;
+  excerpt: string;
+  url: string;
+  tone: "blue" | "coral";
+}
+
 export interface NavItem {
   label: string;
   href: string;

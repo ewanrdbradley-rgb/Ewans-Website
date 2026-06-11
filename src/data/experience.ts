@@ -17,6 +17,8 @@ export const experiences: ExperienceEntry[] = [
     ],
     tags: ["Wearable Tech", "Health", "Musculoskeletal", "Longevity"],
     icon: "jeani",
+    image: "/images/fuqua-pitch.jpg",
+    imagePosition: "50% 25%",
   },
   {
     id: "duke-decathlon",
@@ -35,7 +37,7 @@ export const experiences: ExperienceEntry[] = [
     tags: ["Decathlon", "Athletics", "International", "Duke"],
     icon: "duke",
     image: "/images/duke-team.jpg",
-    imagePosition: "50% 10%",
+    imagePosition: "50% 8%",
   },
   {
     id: "duke-ms",
@@ -54,6 +56,8 @@ export const experiences: ExperienceEntry[] = [
     ],
     tags: ["Global Health", "Sports Medicine", "Research", "Duke"],
     icon: "research",
+    image: "/images/dghi-trent.jpg",
+    imagePosition: "50% 45%",
   },
   {
     id: "kwale-advisor",
@@ -70,6 +74,8 @@ export const experiences: ExperienceEntry[] = [
     ],
     tags: ["Sports Development", "Impact", "Advisory", "Community Health"],
     icon: "research",
+    image: "/images/arusha-fifa.jpg",
+    imagePosition: "50% 55%",
   },
   {
     id: "lboro-president",
@@ -87,5 +93,7 @@ export const experiences: ExperienceEntry[] = [
     ],
     tags: ["Leadership", "Athletics", "Loughborough", "Student Sport"],
     icon: "lboro",
+    image: "/images/lboro-vault.jpg",
+    imagePosition: "50% 31%",
   },
 ];
