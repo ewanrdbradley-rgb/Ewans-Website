@@ -2,6 +2,20 @@ import type { ProjectEntry } from "@/types";
 
 export const projects: ProjectEntry[] = [
   {
+    id: "victories-nobody-sees",
+    title: "The Victories Nobody Sees Are Still Victories",
+    category: "writing",
+    description:
+      "An essay on the quiet, unseen wins — the work and progress that never makes a highlight reel but still counts.",
+    year: "2026",
+    tags: ["Essay", "Substack", "Reflection"],
+    link: "https://open.substack.com/pub/ewanbradley/p/the-victories-nobody-sees-are-still",
+    linkLabel: "Read on Substack",
+    featured: false,
+    image: "/images/victories-stretching.jpg",
+    imagePosition: "50% 40%",
+  },
+  {
     id: "jeani-app",
     title: "Jeani",
     category: "tech",

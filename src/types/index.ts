@@ -16,7 +16,7 @@ export interface ExperienceEntry {
 export interface ProjectEntry {
   id: string;
   title: string;
-  category: "athletic" | "tech" | "research";
+  category: "athletic" | "tech" | "research" | "writing";
   description: string;
   year: string;
   tags: string[];

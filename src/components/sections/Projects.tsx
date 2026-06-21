@@ -12,6 +12,7 @@ const categoryLabels: Record<string, string> = {
   athletic: "Athletics",
   tech:     "Technology",
   research: "Research",
+  writing:  "Writing",
 };
 
 /**
