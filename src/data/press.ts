@@ -2,6 +2,17 @@ import type { PressEntry } from "@/types";
 
 export const press: PressEntry[] = [
   {
+    id: "chronicle-jeani",
+    publication: "The Chronicle",
+    date: "Jun 2026",
+    headline:
+      "After consistent health struggles, former Duke decathletes found startup to help athletes predict injuries",
+    excerpt:
+      "“The biggest impact on my track career has been the number of injuries I've had, not my heart rate or my fitness that current wearables measure.”",
+    url: "https://dukechronicle.com/article/duke-university-jeani-decathaletes-track-and-field-injuries-startup-app-joint-health-graduate-students-20260624",
+    tone: "coral",
+  },
+  {
     id: "grepbeat-jeani",
     publication: "GrepBeat",
     date: "May 2026",
